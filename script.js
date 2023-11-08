@@ -5,7 +5,4 @@
 
 // Arrow function
 
-let func1 = () =>{
-    console.log("Hello World");
-};
-func1();
+console.log(document.querySelector(".para"));
