@@ -5,4 +5,7 @@
 
 // Arrow function
 
-console.log(document.querySelector(".para"));
+const func = () =>{
+var p = document.querySelector(".para");
+p.innerText = "hello world";
+}
