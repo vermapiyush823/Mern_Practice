@@ -3,15 +3,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <input type="text" name="" id="task">
-        <button onclick="addTask()">Add</button>
+    <div class="header">
+        <h1>To Do List</h1>
+        <input type="text" name="text" id="input" placeholder="Enter you task">
+        <button id="add" onclick="addTask()">Add</button>
     </div>
-    <div>
-        <ul id="tasks"></ul>
+    <div class="container">
+        <h1>Tasks</h1>
+        <h2>Add your tasks</h2>
+        <ul></ul>
     </div>
     <script src="script.js"></script>
 </body>

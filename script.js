@@ -4,7 +4,6 @@
 // func1(); // func
 
 // Arrow function
-
 const func = () =>{
 // console.log(document.querySelector(".para").innerText);
 // console.log(document.querySelectorAll(".para")[0].innerText);
@@ -14,6 +13,14 @@ for (let index = 0; index < p.length; index++) {
     p[index].innerText = p[index].innerText + " " + (index+1);
 };  
 } 
+
+
+// var - can ne reassigned, can be redeclared
+// let - can be reassigned, can't be redeclared in the same scope
+// const - can't be reassigned, can't be redeclared 
+
+
+
 
 // console.log(p.parentElement);
 // console.log(p.childNodes);
