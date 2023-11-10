@@ -6,6 +6,15 @@
 // Arrow function
 
 const func = () =>{
-console.log(document.querySelector(".para").innerText);
-console.log(document.querySelectorAll(".para")[0].innerText);
+// console.log(document.querySelector(".para").innerText);
+// console.log(document.querySelectorAll(".para")[0].innerText);
+// console.log(document.getElementsByClassName(".para"));
+const p = document.querySelectorAll(".para");
+for (let index = 0; index < p.length; index++) {
+    p[index].innerText = p[index].innerText + " " + (index+1);
+};  
 } 
+
+// console.log(p.parentElement);
+// console.log(p.childNodes);
+
