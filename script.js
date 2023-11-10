@@ -24,5 +24,10 @@ function changeBG(){
     p.setAttribute("color","orange");
 }; 
 function createNewElement(){
-    
+    const body = document.querySelector("body");
+    const para = document.createElement("p");
+    para.innerText = "I am new";
+    body.appendChild(para);  
+    body.removeChild(document.querySelector(".para"));
+    console.log(para);
 }
