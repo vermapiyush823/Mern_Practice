@@ -8,4 +8,4 @@
 const func = () =>{
 var p = document.querySelector(".para");
 p.innerText = "hello world";
-}
+} 
