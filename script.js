@@ -18,3 +18,11 @@ for (let index = 0; index < p.length; index++) {
 // console.log(p.parentElement);
 // console.log(p.childNodes);
 
+function changeBG(){
+    const p = document.querySelector(".para");
+    // p.classList.toggle("colorRed");
+    p.setAttribute("color","orange");
+}; 
+function createNewElement(){
+    
+}
