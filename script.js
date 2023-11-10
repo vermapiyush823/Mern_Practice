@@ -6,6 +6,6 @@
 // Arrow function
 
 const func = () =>{
-var p = document.querySelector(".para");
-p.innerText = "hello world";
+console.log(document.querySelector(".para").innerText);
+console.log(document.querySelectorAll(".para")[0].innerText);
 } 
