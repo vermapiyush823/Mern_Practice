@@ -38,3 +38,29 @@ function createNewElement(){
     body.removeChild(document.querySelector(".para"));
     console.log(para);
 }
+
+// Arrays
+const arr = [1,2,3,4,5];
+console.log(arr);
+
+console.log(arr.unshift(0));
+console.log(arr);
+
+
+console.log(arr.slice(0,3))
+console.log(arr.splice(2,0,"Hello"))
+console.log(arr)
+
+
+
+// Callback Functions  
+const a =(para) =>{
+    console.log("Hello from a");
+    para();
+}
+const b = () =>{
+    console.log("Hello from b");
+}
+
+
+a(b);
