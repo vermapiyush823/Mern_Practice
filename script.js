@@ -87,8 +87,14 @@ console.log(val);
 const nums = [1,-2,3,-2,4,-1];
 
 let count =0 
-nums.map((i)=>{
+  nums.map((i)=>{
     if(i>=0)
     count += i
 })
-console.log(count);
+console.log(count); 
+
+const filteredArray = nums.filter((val)=>{
+    return  val<0;
+});
+
+console.log(filteredArray)
