@@ -43,6 +43,20 @@
 
 // -------------------------------------------
 
+// Events
+
+const btn =  document.querySelector(".btn1");
+btn.addEventListener("click",()=>{
+    alert("I was clicked");
+})
+
+
+
+// -------------------------------------------
+
+
+
+
 // Arrays
 // const arr = [1,2,3,4,5];
 // console.log(arr);
@@ -59,42 +73,46 @@
 
 // Callback Functions --> which is passed as an argument to another function
 // High order Funtions --> which accepts the function as  parameter 
-const HOF =(para) =>{
-    console.log("Hello from HOF");
-    para();
-}
-const callback = () =>{
-    console.log("Hello from callback");
-}
+// const HOF =(para) =>{
+//     console.log("Hello from HOF");
+//     para();
+// }
+// const callback = () =>{
+//     console.log("Hello from callback");
+// }
 
-HOF(callback);
-HOF(()=>{
-    console.log("Hello from callback");
-});
+// HOF(callback);
+// HOF(()=>{
+//     console.log("Hello from callback");
+// });
 
-var arr = ["Piyush","Sagar","Kashish"];
+// ---------------------------------------
 
-const val1 =  arr.forEach((i,ind)=>{
-    return ind; 
-});
-console.log(val1);
+// High order functions (forEach,map,filter)
 
-const val = arr.map((i,ind)=>{
-    console.log(i,ind+1);
-});
-console.log(val);
+// var arr = ["Piyush","Sagar","Kashish"];
 
-const nums = [1,-2,3,-2,4,-1];
+// const val1 =  arr.forEach((i,ind)=>{
+//     return ind; 
+// });
+// console.log(val1);
 
-let count =0 
-  nums.map((i)=>{
-    if(i>=0)
-    count += i
-})
-console.log(count); 
+// const val = arr.map((i,ind)=>{
+//     console.log(i,ind+1);
+// });
+// console.log(val);
 
-const filteredArray = nums.filter((val)=>{
-    return  val<0;
-});
+// const nums = [1,-2,3,-2,4,-1];
 
-console.log(filteredArray)
+// let count =0 
+//   nums.map((i)=>{
+//     if(i>=0)
+//     count += i
+// })
+// console.log(count); 
+
+// const filteredArray = nums.filter((val)=>{
+//     return  val<0;
+// });
+
+// console.log(filteredArray)
