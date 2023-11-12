@@ -45,10 +45,10 @@
 
 // Events
 
-const btn =  document.querySelector(".btn1");
-btn.addEventListener("click",()=>{
-    alert("I was clicked");
-})
+// const btn =  document.querySelector(".btn1");
+// btn.addEventListener("click",()=>{
+//     alert("I was clicked");
+// })
 
 
 
@@ -116,3 +116,64 @@ btn.addEventListener("click",()=>{
 // });
 
 // console.log(filteredArray)
+
+// ----------------------------------
+
+// oops
+
+class Person{
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    greet(){
+        console.log("Hello "+this.name +" Your age is " +this.age);
+    }
+}
+
+const person = new Person("Piyush",19);
+person.greet();
+
+// inheritance
+class Animal{
+    constructor(name){
+        this.name = name;
+    }
+    eating(){
+        console.log(this.name + " is eating...");
+    }
+}
+
+class Dog extends Animal{
+    barking(){
+        console.log(this.name +" is barking...");
+    }
+}
+
+const max = new Dog("Max");
+max.barking();
+max.eating();
+
+
+// Polymorphism
+class Shape{
+    area(){
+        console.log("Calculating area of shape")
+    }
+}
+class Circle{
+    area(){
+        console.log("Calculating area of circle")
+    }
+}
+class Square{
+    area(){
+        console.log("Calculating area of square")
+    }
+}
+
+const sh = new Shape();
+const cr = new Circle();
+
+sh.area();
+cr.area();
